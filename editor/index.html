@@ -70,7 +70,7 @@
       color: var(--fg);
       min-width: 0;
     }
-    button {
+    button, a.btn-link {
       font: inherit;
       padding: 6px 10px;
       border: 1px solid var(--line);
@@ -78,6 +78,8 @@
       background: var(--bg);
       color: var(--fg);
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
     button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
     button.danger { color: var(--danger); }
@@ -173,6 +175,8 @@
   <header class="row">
     <h1>Dictionary Editor</h1>
     <span class="muted">단어 한 행 = 단어 1개. 뜻은 비워둘 수 있습니다(비우면 영어 그대로).</span>
+    <a class="btn-link" href="https://jace-s.com/about" target="_blank" rel="noopener noreferrer">개발자에 대해</a>
+    <a class="btn-link" href="https://jace-s.com/feedback/9" target="_blank" rel="noopener noreferrer">피드백</a>
   </header>
 
   <div class="layout">
